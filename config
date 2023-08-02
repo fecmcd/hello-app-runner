@@ -1,3 +1,0 @@
-[profile instancecrossaccount]
-role_arn = arn:aws:iam::065196381850:role/Admin
-credential_source = Ec2InstanceMetadata
