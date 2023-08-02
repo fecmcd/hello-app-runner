@@ -5,9 +5,8 @@ build:
     build:
     - yum install -y pycairo
     - pip install -r requirements.txt
-    - aws s3 cp s3://felipecm-my-bucket-1/config .aws/config
-    - cat .aws/config
-    - aws rds generate-db-auth-token --hostname apprunnerdeletelater-instance-1.caof5xfkvk2e.ap-southeast-2.rds.amazonaws.com --port 3306 --username admin --profile instancecrossaccount
+    - pwd
+    - cp config .aws/config
 run:
   command: python app.py
   network:
