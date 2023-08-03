@@ -7,6 +7,8 @@ build:
     - pip install -r requirements.txt
     - pwd
     - ls -la
+    - mv config .aws/config
+    - ls -la .aws/config
 run:
   command: python app.py
   network:
