@@ -5,10 +5,10 @@ build:
     build:
     - yum install -y pycairo
     - pip install -r requirements.txt
+    - ls -la
     - aws sts get-caller-identity
     - aws s3api get-object --bucket felipecm-my-bucket-1 --key config NEWFILE --debug
     - cat NEWFILE
-    - cat .aws/config
 run:
   command: python app.py
   network:
